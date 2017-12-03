@@ -125,8 +125,7 @@ public class Page1 extends JFrame {
 						if(tname.contains(set.getString("tname")))
 						{
 							flag = true;
-							statement.executeUpdate("update scheduler set today_mod = " +mods+  " where tname = \""+tname+"\";");
-							statement.executeUpdate("update scheduler set today_time = " +time+  " where tname = \""+tname+"\";");
+							statement.executeUpdate("update scheduler set today_mod = " +mods+ ", today_time = " + time + " where tname = \""+tname+"\";");
 							break;
 						}
 					}
